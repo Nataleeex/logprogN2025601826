@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donas"/>
+        <attribute name="authors" value="Natale"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-23 08:08:50 p. m."/>
+        <attribute name="created" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTAzLTIzOzA3OjExOjQxIHAuIG0uOzMxNjc="/>
+        <attribute name="edited" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTAzLTIzOzA4OjA4OjUwIHAuIG0uOzE7MzI4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumDonas" type="Integer" array="False" size=""/>
+            <declare name="precio, total, desc1, desc2" type="Real" array="False" size=""/>
+            <assign variable="desc1" expression="1.00"/>
+            <assign variable="desc2" expression="2.00"/>
+            <assign variable="precio" expression="10.00"/>
+            <output expression="&quot;Numero de donas compradas&quot;" newline="True"/>
+            <input variable="numDonas"/>
+            <if expression="numDonas&gt;29">
+                <then>
+                    <if expression="numDonas&gt;49">
+                        <then>
+                            <assign variable="total" expression="numDonas*precio - desc2*numDonas"/>
+                            <output expression="&quot;PRECIO FINAL:&quot;" newline="True"/>
+                            <output expression="total" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="total" expression="numDonas*precio - desc1*numDonas"/>
+                            <output expression="&quot;PRECIO FINAL:&quot;" newline="True"/>
+                            <output expression="total" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="total" expression="numDonas*precio"/>
+                    <output expression="&quot;PRECIO FINAL:&quot;" newline="True"/>
+                    <output expression="total" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
