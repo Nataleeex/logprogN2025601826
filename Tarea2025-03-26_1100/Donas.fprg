@@ -4,9 +4,9 @@
         <attribute name="name" value="Donas"/>
         <attribute name="authors" value="Natale"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-03-23 08:08:50 p. m."/>
+        <attribute name="saved" value="2025-03-23 08:40:17 p. m."/>
         <attribute name="created" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTAzLTIzOzA3OjExOjQxIHAuIG0uOzMxNjc="/>
-        <attribute name="edited" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTAzLTIzOzA4OjA4OjUwIHAuIG0uOzE7MzI4Mg=="/>
+        <attribute name="edited" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTAzLTIzOzA4OjQwOjE3IHAuIG0uOzI7MzI4Mg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -18,9 +18,9 @@
             <assign variable="precio" expression="10.00"/>
             <output expression="&quot;Numero de donas compradas&quot;" newline="True"/>
             <input variable="numDonas"/>
-            <if expression="numDonas&gt;29">
+            <if expression="numDonas&gt;=30">
                 <then>
-                    <if expression="numDonas&gt;49">
+                    <if expression="numDonas&gt;=50">
                         <then>
                             <assign variable="total" expression="numDonas*precio - desc2*numDonas"/>
                             <output expression="&quot;PRECIO FINAL:&quot;" newline="True"/>
