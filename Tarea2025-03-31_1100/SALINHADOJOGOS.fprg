@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="SALINHADOJOGOS"/>
+        <attribute name="authors" value="Natale"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-29 05:18:30 p. m."/>
+        <attribute name="created" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTAzLTI5OzA1OjEwOjU3IHAuIG0uOzMxNzc="/>
+        <attribute name="edited" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTAzLTI5OzA1OjE4OjMwIHAuIG0uOzE7MzI4NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="EDAD" type="Integer" array="False" size=""/>
+            <output expression="&quot;INGRESE LA EDAD DEL CLIENTE&quot;" newline="True"/>
+            <input variable="EDAD"/>
+            <if expression="EDAD&gt;=0">
+                <then>
+                    <if expression="EDAD&lt;4">
+                        <then>
+                            <output expression="&quot;PRECIO: GRATIS&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="EDAD&gt;=4&#13;&#10;And&#13;&#10;EDAD&lt;=18">
+                                <then>
+                                    <output expression="&quot;PRECIO: $200&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;PRECIO: $500&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;ILOGICO&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

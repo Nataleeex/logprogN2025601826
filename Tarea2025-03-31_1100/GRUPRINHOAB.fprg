@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="try"/>
+        <attribute name="authors" value="Natale"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-29 05:19:03 p. m."/>
+        <attribute name="created" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTAzLTI5OzA0OjMwOjE3IHAuIG0uOzMxNzQ="/>
+        <attribute name="edited" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTAzLTI5OzA1OjE5OjAzIHAuIG0uOzQ7MzI4OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicial" type="String" array="False" size=""/>
+            <declare name="Sexo" type="String" array="False" size=""/>
+            <output expression="&quot;INGRESE SU INICIAL (MAYUSCULAS)&quot;" newline="True"/>
+            <input variable="inicial"/>
+            <output expression="&quot;INGRESE EL SEXO ([M] PARA MUJER, [H] PARA HOMBRES)&quot;" newline="True"/>
+            <input variable="Sexo"/>
+            <if expression="Sexo=&quot;M&quot; and inicial&lt;&quot;M&quot;&#13;&#10;Or&#13;&#10;Sexo=&quot;H&quot; and inicial&gt;&quot;N&quot;">
+                <then>
+                    <output expression="&quot;GRUPO A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;GRUPO B&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
