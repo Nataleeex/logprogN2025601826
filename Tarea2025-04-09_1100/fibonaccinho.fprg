@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonaccinho"/>
+        <attribute name="authors" value="Natale"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 05:47:30 p. m."/>
+        <attribute name="created" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTA0LTA4OzA1OjE0OjM0IHAuIG0uOzMxNzQ="/>
+        <attribute name="edited" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTA0LTA4OzA1OjQ3OjMwIHAuIG0uOzE7MzI4NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z, i" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="1"/>
+            <assign variable="y" expression="2"/>
+            <for variable="i" start="1" end="64" direction="inc" step="1">
+                <assign variable="z" expression="x+y"/>
+                <output expression="i" newline="False"/>
+                <output expression="&quot;:&quot;" newline="False"/>
+                <output expression="z" newline="True"/>
+                <assign variable="x" expression="y"/>
+                <assign variable="y" expression="z"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

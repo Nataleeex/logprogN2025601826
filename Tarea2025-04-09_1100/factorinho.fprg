@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorinho"/>
+        <attribute name="authors" value="Natale"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 05:13:08 p. m."/>
+        <attribute name="created" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTA0LTA4OzAzOjQyOjU3IHAuIG0uOzMxNzg="/>
+        <attribute name="edited" value="TmF0YWxlO0RFU0tUT1AtOVZJVURTSDsyMDI1LTA0LTA4OzA1OjEzOjA4IHAuIG0uOzE7MzI4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;INGRESE EL NUMERO QUE QUIERA TRANSFORMAR A FACTORIAL&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="n" expression="num"/>
+            <do expression="num&gt;1">
+                <assign variable="n" expression="n*(num-1)"/>
+                <assign variable="num" expression="num-1"/>
+            </do>
+            <output expression="&quot;El factorial ser&#237;a: &quot;" newline="False"/>
+            <output expression="n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
